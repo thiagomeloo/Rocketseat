@@ -1,0 +1,32 @@
+@import "https://fonts.googleapis.com/css2?family=Open+Sans&display=swap";
+
+*{
+    margin:0;
+    padding:0;
+    border:0;
+    font-family: 'Open Sans', sans-serif;
+}
+
+body{
+    background: #1b1b1b;
+}
+
+header{
+    padding: 30px;
+    text-align:center;
+    background: rgba(0, 0, 0, 0.1);
+}
+
+header a{
+    margin:0 30px;
+    text-decoration: none;
+    color:#6c4fbb;
+
+}
+header a:hover{
+    color:#50fa7b;
+    transition: color 200ms;
+}
+
+
+
