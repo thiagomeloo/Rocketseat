@@ -1,0 +1,156 @@
+@import "https://fonts.googleapis.com/css2?family=Open+Sans&display=swap";
+@import "https://fonts.googleapis.com/icon?family=Material+Icons";
+
+:root{
+    --colorGreen: #50fa7b;
+    --color-rocket: #7159c1;
+}
+
+*{
+    margin:0;
+    padding:0;
+    border:0;
+    font-family: 'Open Sans', sans-serif;
+}
+
+body{
+    background: #1b1b1b;
+    color: white;
+    line-height: 40px;
+}
+
+header{
+    padding: 32px;
+    text-align:center;
+    background: rgba(0, 0, 0, 0.1);
+}
+
+.links a{
+    font-size: 22px;
+    line-height: 28px;
+    margin:0px 16px;
+    text-decoration: none;
+    color:#6c4fbb;
+
+}
+.links a:hover{
+    color:var(--colorGreen);
+    transition: color 200ms;
+}
+
+#links-footer {
+    text-align: center;
+    margin: 0 auto;
+}
+
+#links-footer a{
+
+    border-bottom: var(--colorGreen) solid 0.5px;
+}
+
+
+/* ============ CARDS =============== */
+
+.cards{
+    max-width: 80vw;
+    margin: 5vw auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap:20px;
+}
+
+.card{
+    border-radius: 30px;
+    padding: 30px 0;
+    background-color: #252525;
+}
+
+.card_image_container{
+    display: flex;
+    margin: auto;
+}
+
+
+.card_image_container img{
+
+    margin: auto;
+}
+
+
+.card_content,
+.card_info{
+    padding: 24px;
+}
+
+.card_content p {
+    margin-top: 10px;
+    font-weight:bold;
+    font-size: 18px;
+    text-align: center;
+}
+
+.card_info {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.card_info .card_price{
+    background-color: var(--color-rocket);
+    filter: brightness(90%);
+    padding: 5px 20px;
+    border-radius: 20px;
+    text-align: center;
+}
+
+.cards .card:hover{
+    cursor: pointer;
+    border: solid var(--colorGreen);
+}
+
+
+/* -------- MODAL --------- */
+
+.modal-overlay{
+    background-color: rgba(0, 0,0, 0.7);
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top:0;
+    opacity: 0;
+    visibility: hidden;
+}
+
+.modal{
+    background-color: white;
+    width: 90%;
+    height: 90%;
+    margin: 5vh auto;
+    position: relative;
+}
+
+.modal .buttons_modal{
+    color: black;
+    position: absolute;
+    right: 8px;
+    top:8px;
+}
+.modal .buttons_modal a{
+    cursor: pointer;
+    margin: 8px;
+}
+
+
+
+/* -------- MODAL ACTIVE --------- */
+
+.modal-overlay.active{
+    opacity: 1;
+    visibility: visible;
+}
+
+iframe {
+    width: 100%;
+    height: 90%;
+    position: absolute;
+    top:5%;
+}
